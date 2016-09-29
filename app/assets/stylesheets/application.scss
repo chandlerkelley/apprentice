@@ -1,6 +1,19 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+* {
+	color: #fff;
+	font-size: 13px;
+}
+
+a {
+	color: #98A36F;
+	font-size: 20px;
+}
+
+a:hover {
+	color: #C8D39F;
+}
 
 body {
 	background-color: #000;
@@ -33,9 +46,54 @@ body {
 }
 
 .greeting {
-	width: 100px;
-	height: 100px;
 	background-color: #000;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.greeting-top {
+	display: flex;
+	align-items: center;
+}
+
+.greeting-bottom {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+.greeting-text {
+	width: 300px;
+	margin: 1.0em;
+}
+
+.greeting-text h1 {
+	text-align: center;
+}
+
+.chandler {
+	height: 300px;
+	border-radius: 12px;
+}
+
+.work {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 696px;
+}
+
+.project {
+	margin: 20px;
+	background-color: #000;
+	border: solid 4px #000;
+	border-radius: 16px;
+}
+
+.project-image {
+	width: 300px;
+	height: 250px;
+	border-radius: 12px;
 }
 
 .instructions {
