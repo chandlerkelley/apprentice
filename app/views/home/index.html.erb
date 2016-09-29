@@ -1,5 +1,3 @@
-<div class="gray">
-</div>
 <div class="container">
 	<div class="greeting">
 		<div class="greeting-top">
@@ -14,7 +12,7 @@
 			</div>
 		</div>
 		<div class="greeting-bottom">
-			<a href="#">Ask me some questions</a>
+			<%= link_to 'Ask Me Some Questions', answers_path %>
 			<%= link_to 'Projects', root_path(:anchor => "projects") %>
 			<%= link_to 'Contact', root_path(:anchor => "contact") %>
 		</div>

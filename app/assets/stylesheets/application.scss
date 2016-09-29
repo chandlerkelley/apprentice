@@ -14,10 +14,6 @@ a:hover {
 	color: #C8D39F;
 }
 
-li {
-	list-style: none;
-}
-
 body {
 	background-color: #000;
 	background: url("kudzu.jpg") no-repeat center center fixed;
@@ -153,6 +149,28 @@ body {
 .contact a {
 	font-size: inherit;
 }
+
+.main {
+	background-color: #000;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	padding: 10px;
+}
+
+.answer-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.answer-links a {
+	display: block;
+	text-align: right;
+}
+
 
 .instructions {
 	padding: 30px;
