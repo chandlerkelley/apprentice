@@ -3,8 +3,9 @@
 @import "bootstrap";
 
 body {
-	background: #f9f9f9;
-	border-right: 80px solid red;
+	background-color: #000;
+	background: url("kudzu.jpg") no-repeat center center fixed;
+	background-size: cover;
 	min-height: 100vh;
 	@media (max-width: 768px) {
 		border-top: 80px solid red;
@@ -13,19 +14,31 @@ body {
 	}
 }
 
-.logo {
-	position: absolute;
-	right: 5px;
-	top: 46vh;
-	width: 70px;
-	@media (max-width: 768px) {
-		top: 5px;
-		left: 50%;
-		margin-left: -35px;
-	}
+.gray {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #666;
+	opacity: .6;
+	z-index: -1
 }
 
-.home {
+.container {
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	height: 100vh;
+}
+
+.greeting {
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+}
+
+.instructions {
 	padding: 30px;
 	max-width: 50%;
 	@media (max-width: 768px) {
