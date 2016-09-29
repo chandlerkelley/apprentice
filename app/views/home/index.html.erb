@@ -15,12 +15,12 @@
 		</div>
 		<div class="greeting-bottom">
 			<a href="#">Ask me some questions</a>
-			<a href="#">Projects</a>
-			<a href="#">Contact</a>
+			<%= link_to 'Projects', root_path(:anchor => "projects") %>
+			<%= link_to 'Contact', root_path(:anchor => "contact") %>
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container" id="projects">
 	<div class="work">
 		<div class="project">
 			<%= image_tag("totally_righteous.png", class:"project-image") %>
@@ -44,7 +44,7 @@
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container" id="contact">
 	<div class="contact">
 	<h2>contact me</h2>
 		<p>chandler.t.kelley@gmail.com</p>

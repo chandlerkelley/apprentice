@@ -105,7 +105,8 @@ body {
 }
 
 .project:hover .project-image {
-	opacity: .5;
+	opacity: .45;
+	transform: scale(1.05);
 }
 
 .project:hover .link-image {
