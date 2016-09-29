@@ -8,11 +8,14 @@
 
 a {
 	color: #98A36F;
-	font-size: 20px;
 }
 
 a:hover {
 	color: #C8D39F;
+}
+
+li {
+	list-style: none;
 }
 
 body {
@@ -72,6 +75,10 @@ body {
 	text-align: center;
 }
 
+.greeting-bottom a {
+	font-size: 20px;
+}
+
 .chandler {
 	height: 300px;
 	border-radius: 12px;
@@ -126,11 +133,24 @@ body {
 
 .contact {
 	background-color: #000;
-	height: 200px;
-	width: 200px;
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.contact h2 {
+	margin-top: 0;
+}
+
+.contact p {
+	margin-bottom: 0;
+	font-size: inherit;
+}
+
+.contact a {
+	font-size: inherit;
 }
 
 .instructions {
