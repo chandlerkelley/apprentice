@@ -84,16 +84,33 @@ body {
 }
 
 .project {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-color: #fff;
+	width: 300px;
+	height: 250px;
 	margin: 20px;
-	background-color: #000;
 	border: solid 4px #000;
 	border-radius: 16px;
 }
 
 .project-image {
-	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
 	height: 250px;
+	width: 300px;
 	border-radius: 12px;
+	opacity: .6;
+}
+
+.link-image {
+	margin: 0 15px;
+	position: relative;
+	height: 70px;
+	width: 70px;
 }
 
 .instructions {
