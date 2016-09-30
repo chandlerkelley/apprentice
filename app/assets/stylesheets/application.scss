@@ -41,12 +41,16 @@ body {
 	min-height: 100vh;
 }
 
-.greeting {
+.box {
 	background-color: #000;
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
 	margin: 20px 0;
+}
+
+column {
+	flex-direction: column;
 }
 
 .greeting-top {
@@ -135,10 +139,6 @@ body {
 }
 
 .contact {
-	background-color: #000;
-	border-radius: 12px;
-	display: flex;
-	flex-direction: column;
 	padding: 10px;
 	font-size: 16px;
 }
@@ -156,14 +156,9 @@ body {
 	font-size: inherit;
 }
 
-.main {
-	background-color: #000;
-	border-radius: 12px;
-	display: flex;
-	flex-direction: column;
+.answer-container {
 	min-width: 300px;
 	padding: 10px;
-	margin: 20px 0;
 }
 
 .answer-head {
