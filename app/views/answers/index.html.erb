@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div class="container">
   <div class="main">
     <div class="answer-head">
@@ -9,41 +8,14 @@
       </div>
     </div>
     <div class="answer-body">
+      <p id="notice"><em><%= notice %></em></p><br>
       <% @answers.each do |answer| %>
         <p><b><%= answer.question %></b></p>
         <p><%= answer.answer %></p>
-        <br>
+        <%= link_to "(edit question)", edit_answer_path(answer) %>
+        <%= link_to "(delete question)", answer, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <br><br>
       <% end %>
     </div>
   </div>
 </div>
-
-
-
-<h1>Listing Answers</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Question</th>
-      <th>Answer</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @answers.each do |answer| %>
-      <tr>
-        <td><%= answer.question %></td>
-        <td><%= answer.answer %></td>
-        <td><%= link_to 'Show', answer %></td>
-        <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
-        <td><%= link_to 'Destroy', answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Answer', new_answer_path %>
