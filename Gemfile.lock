@@ -223,6 +223,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  json
   pg
   pry
   puma (~> 2.14.0)
