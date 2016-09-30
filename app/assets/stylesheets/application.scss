@@ -16,7 +16,7 @@ a:hover {
 
 body {
 	background-color: #000;
-	background: url("/assets/kudzu.jpg") no-repeat center center fixed;
+	background: asset-data-url("kudzu.jpg") no-repeat center center fixed;
 	background-size: cover;
 	min-height: 100vh;
 	@media (max-width: 768px) {
